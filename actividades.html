@@ -8,6 +8,26 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script>
+            function RevisarPregunta1(){
+                if(document.getElementById("pregunta1respuesta3").checked)        {
+                    document.getElementById("contenedorRespuesta1").innerHTML='<div class="alert alert-success alert-dismissible fade show" role="alert"> Respuesta Correcta'
+                    +'<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>';
+                }else{
+                    document.getElementById("contenedorRespuesta1").innerHTML='<div class="alert alert-danger alert-dismissible fade show" role="alert"> Respuesta Incorrecta'
+                    +'<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>';
+                }
+            }
+            function RevisarPregunta2(){
+                if(document.getElementById("pregunta2respuesta2").checked)        {
+                    document.getElementById("contenedorRespuesta2").innerHTML='<div class="alert alert-success alert-dismissible fade show" role="alert"> Respuesta Correcta'
+                    +'<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>';
+                }else{
+                    document.getElementById("contenedorRespuesta2").innerHTML='<div class="alert alert-danger alert-dismissible fade show" role="alert"> Respuesta Incorrecta'
+                    +'<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>';
+                }
+            }
+        </script>
         <title>Actividades</title>
     </head>
     <body>
@@ -66,6 +86,57 @@
                 </div>
             </section>
         </header>
+        <!-- sección contenido -->
+        <section>
+            <div class="container">
+                <br>
+                <div id="contenedorRespuesta1"></div>
+                <h3>1. Según lo explicado anteriormente seleccione la afirmación correcta </h3>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pregunta1" id="pregunta1respuesta1" value="1">
+                    <label class="form-check-label" for="respuesta1">
+                        Un sitio web actual debe utilizar elementos que requieren adobe flash player ® y similares para mostrar los contenidos en todos los dispositivos.
+                    </label>
+                </div>
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pregunta1" id="pregunta1respuesta2" value="2">
+                    <label class="form-check-label" for="respuesta2">
+                        La página web mientras más lento cargue mejor porque eso demuestra que tiene gran contenido.
+                    </label>
+                </div>
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pregunta1" id="pregunta1respuesta3" value="3">
+                    <label class="form-check-label" for="respuesta3">
+                        Un sitio web se debe adaptar a cada tipo de pantalla, para que los visitantes puedan verlo desde cualquier dispositivo como lo son los celulares.
+                    </label>
+                </div>
+                <br>
+                <button type="button" class="btn btn-outline-success" onclick="RevisarPregunta1()" >Revisar</button>
+                <br>
+                <div id="contenedorRespuesta2"></div>
+                <h3>Lea siguiente afirmación y diga si es verdadera o falsa “Una buena página web No se debe adaptar a cada tipo de pantalla ya que el único medio de navegar es atreves de un computador y estos solo tienen un tamaño de pantalla”.</h3>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pregunta2" id="pregunta2respuesta1" value="1">
+                    <label class="form-check-label" for="respuesta1">
+                        Verdadero.
+                    </label>
+                </div>
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="pregunta2" id="pregunta2respuesta2" value="2">
+                    <label class="form-check-label" for="respuesta2">
+                        Falso.
+                    </label>
+                </div>
+                <br>
+                <br>
+                <button type="button" class="btn btn-outline-success" onclick="RevisarPregunta2()" >Revisar</button>
+
+            </div>
+        </section>
+        <br>
         <!-- sección footer -->
         <section>
                 <footer>
