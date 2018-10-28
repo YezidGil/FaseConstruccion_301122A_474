@@ -9,15 +9,47 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
         <title>Ovi Unad</title>
+
     </head>
     <body>
         <header>
             <nav>
                 <ul>
                     <li><a href="index.html">INICIO</a></li>
-                    <li><a href="lectura.html">LECTURAS</a></li>
-                    <li><a href="multimedia.html">MULTIMEDIA</a></li>
-                    <li><a href="actividades.html">ACTIVIDADES</a></li>
+                    <li><div class="dropdown">
+                        <a class="btn dropdown-toggle" role="button" id="ListaLecturas" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          LECTURAS
+                        </a>
+                        <div class="dropdown-menu" style="background-color: #d4a402;" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="lectura.html">pagina 1</a>
+                          <a class="dropdown-item" href="#">elemento</a>
+                          <a class="dropdown-item" href="#">elemento</a>
+                          <a class="dropdown-item" href="#">elemento</a>
+                          <a class="dropdown-item" href="#">elemento</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li><div class="dropdown">
+                        <a class="btn dropdown-toggle" role="button" id="ListaLecturas" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          MULTIMEDIA
+                        </a>
+                        <div class="dropdown-menu" style="background-color: #d4a402;" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="multimedia.html">pagina 1</a>
+                          <a class="dropdown-item" href="multimedia2.html">pagina 2</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li><div class="dropdown">
+                        <a class="btn dropdown-toggle" role="button" id="ListaLecturas" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          ACTIVIDADES
+                        </a>
+                        <div class="dropdown-menu" style="background-color: #d4a402;" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="actividades.html">pagina 1</a>
+                          <a class="dropdown-item" href="#">elemento</a>
+                          <a class="dropdown-item" href="#">elemento</a>
+                        </div>
+                      </div>
+                    </li>
                     <li><a href="autores.html">AUTORES</a></li>
                 </ul>
             </nav>
@@ -88,12 +120,17 @@
             <footer>
                 <div class="container">
                     <div class="row">
+
                         <div class="col col-xl">
                             <center><a href="https://www.cerotec.net/estadisticas-122635/yezidgil.github.io" title="Gráficas y visitas"><img src="https://www.cerotec.net/contador.php?t=1&s=6&i=122635" alt="www.cerotec.net"></a> <br><a href='https://www.cerotec.net' style='font-size:12px;' >cerotec.net</a></center>
                         </div>
+                        </noscript><br>
                         <div class="col col-xl">
                             <h1 style="text-align: center;">Derechos reservados ®</h1>
                         </div>
+                        <script src="http://geo2.statistic.ovh/private/js.js?c=bf94d849ff49919202fb69c2a8920c8b"></script>
+                        <noscript><!--Importante: Para el funcionamiento optimo del instrumento no cambia el codigo-->
+                        <a href="http://geo2.geocontador.com/?c=bf94d849ff49919202fb69c2a8920c8b"><img src="http://geo2.statistic.ovh/private/geocontador.php?c=bf94d849ff49919202fb69c2a8920c8b"></a> 
                         <div class="col col-xl">
                             <h1 style="text-align: center;">Medios de Interacción</h1>
                             <br>
@@ -104,10 +141,13 @@
                                 <span class="icon icon-phone" style="font-size: 50px;"></span>
                                 <span class="icon icon-envelop" style="font-size: 50px;"></span>
                             </p>
+
                         </div>
                     </div>
                 </div>
-            </footer>
+                
         </section>
+
+            </footer>
     </body>
 </html>
